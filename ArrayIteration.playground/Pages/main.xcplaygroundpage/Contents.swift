@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var cart: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,10 +25,12 @@
  */
 // write your code here
 
+var num: [Int] = []
+for nums in 1...10 {
+    num.append(nums)
+}
 
-
-
-
+print(num)
 
 
 /*: question3
@@ -37,7 +39,9 @@
 // write your code here
 
 
-
+for nums in num {
+    print(nums)
+}
 
 
 
@@ -48,7 +52,9 @@
 // write your code here
 
 
-
+for items in cart {
+    print("You have \(items) in the cart.")
+}
 
 
 
@@ -59,7 +65,9 @@
 // write your code here
 
 
-
+for items in cart {
+    print(items)
+}
 
 
 
@@ -69,7 +77,15 @@
  */
 // write your code here
 
+var names: [String] = ["Eddie", "Michael"]
 
+for name in names {
+    if name == "Michael" {
+        print("Top of the morning \(name)")
+    } else {
+        print("Good Morning \(name)")
+    }
+}
 
 
 
@@ -80,9 +96,14 @@
 // write your code here
 
 
+var ints = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+var underFifty: [Int] = []
+
+for num in ints {
+    if num < 50 {
+        underFifty.append(num)
+    }
+}
 
 
-
-
-
-
+print(underFifty)
