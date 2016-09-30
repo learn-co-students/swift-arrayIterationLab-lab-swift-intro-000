@@ -46,7 +46,7 @@ print(list)
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
  */
 for items in ingredients {
-    print(items)
+    print("Purchased \(items)")
 }
 
 
@@ -59,6 +59,9 @@ for items in ingredients {
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
 
+for items in ingredients {
+    print(items)
+}
 
 
 
@@ -90,16 +93,9 @@ func greeting(name: [String]) {
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 let int1 = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+var int2: [Int] = []
 
 
-func lowerThan50(array: [Int]) -> [Int] {
-    for int in array {
-        let newInt = int <= 50
-        var int2: [Int] = []
-       
-        int2.append(newInt)
-    }
-}
 
 
 
