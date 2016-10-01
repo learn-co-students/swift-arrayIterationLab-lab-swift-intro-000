@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var cartList: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -26,7 +26,7 @@
 // write your code here
 
 
-
+var numList: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -36,7 +36,9 @@
  */
 // write your code here
 
-
+for num in numList {
+    print(num)
+}
 
 
 
@@ -58,6 +60,11 @@
  */
 // write your code here
 
+var i = 1
+for cart in cartList {
+    print("Item #\(i) is \(cart)")
+    i += 1
+}
 
 
 
@@ -69,19 +76,39 @@
  */
 // write your code here
 
+func greeting(names: [String]) {
+    for name in names {
+        if name == "Michael" {
+            print("Top of the morning Michael")
+        }
+        else {
+            print("Good morning \(name)")
+        }
+    }
+}
 
+let names = ["Briana", "Danielle", "Debbie", "Michael", "Ayanna", "Mikeisha"]
 
-
-
+greeting(names: names)
 
 /*: question7
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
 
+let intArray = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+var newArray: [Int] = []
 
+func lessThan60(array: [Int]) -> [Int] {
+    for num in array {
+        if num < 50 {
+            newArray.append(num)
+        }
+    }
+    return newArray
+}
 
-
+lessThan60(array: intArray)
 
 
 
