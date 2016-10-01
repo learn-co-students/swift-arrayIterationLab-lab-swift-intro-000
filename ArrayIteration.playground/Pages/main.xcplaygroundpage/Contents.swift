@@ -95,8 +95,16 @@ func greeting(name: [String]) {
 let int1 = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
 var int2: [Int] = []
 
+func returnLessThan50(array: [Int]) {
+    for ints in array {
+        if ints <= 50 {
+            int2.append(ints)
+        }
+    }
+    print(int2)
+}
 
-
+returnLessThan50(array: int1)
 
 
 
