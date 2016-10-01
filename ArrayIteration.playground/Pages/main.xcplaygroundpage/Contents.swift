@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var cart: [String] = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -23,7 +23,7 @@
 /*: question2
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code? Explicitly mark the content of the cart as numbers.
  */
-// write your code here
+var list: [Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -34,7 +34,8 @@
 /*: question3
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible.
  */
-// write your code here
+print(list)
+
 
 
 
@@ -45,7 +46,9 @@
 /*: question4
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
  */
-// write your code here
+for car in cart {
+    print("Let's buy \(car)")
+}
 
 
 
@@ -56,9 +59,6 @@
 /*: question5
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
-// write your code here
-
-
 
 
 
@@ -67,9 +67,17 @@
 /*: question6
  ### 4. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
-// write your code here
+func Greetings(name:[String]) -> String {
+    let names = ["Michael", "John" , "Peter"]
+    for name in names {
+        if name == "Michael" {
+            return "Top of the morning"
+        } else {
+            return "Good Morning"
+        }
+}
 
-
+print(Greetings(name: names))
 
 
 
@@ -77,7 +85,15 @@
 /*: question7
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
-// write your code here
+    func NumbersLess50(grades:[Int]) -> [Int] {
+        var NumbersBelow50 = 0
+        
+        for grade in grades {
+            if grades < 50
+            
+            
+        }
+}
 
 
 
