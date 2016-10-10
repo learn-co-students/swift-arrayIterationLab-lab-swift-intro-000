@@ -14,7 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart. How would you represent this cart in code? The ingredients are "Chips", "Salsa", "Guacamole", "Red wine". Explicitly mark the content of the cart as strings.
  */
 // write your code here
-
+let ingredients: [String] = ["Chips","Salsa","Guacamole","Red wine"]
 
 
 
@@ -24,10 +24,7 @@
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code? Explicitly mark the content of the cart as numbers.
  */
 // write your code here
-
-
-
-
+var numbers: [Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +33,9 @@
  */
 // write your code here
 
-
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -78,9 +77,23 @@
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
+let ints: [Int] = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
 
+func arrayOfIntsLess50(_ integersArray: [Int]) -> [Int] {
+    var count = 0
+    var arrayLess50: [Int] = []
+    
+    for int in integersArray {
+        if(int < 50) {
+            arrayLess50.insert(int, at:count)
+            count += 1
+        }
+    }
+    
+    return (arrayLess50)
+}
 
-
+print(arrayOfIntsLess50(ints))
 
 
 
