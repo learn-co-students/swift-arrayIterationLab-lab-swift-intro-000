@@ -76,15 +76,35 @@ printEachItemsFromCart(arg1: cart)
  */
 let namesToIterate: [String] = ["James", "Paul", "Michael", "Michelle", "Pauline"]
 
+func morningGreetingFor(arg1: [String]) {
+    for name in namesToIterate {
+        if name == "Michael" {
+            print("Top of the morning \(name)")
+        } else {
+            print("Good Morning, \(name)")
+        }
+    }
+}
+
+morningGreetingFor(arg1: namesToIterate)
 /*: question7
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
-// write your code here
+let arrayOfInts: [Int] = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+var arrayLessThan50: [Int] = []
+var rejectedNumberCount = 0
 
+func sortingForLessThan50(arg1: [Int]) ->[Int] {
+    for number in arg1 {
+        if number < 50 {
+            arrayLessThan50.append(number)
+        } else {
+            rejectedNumberCount += 1
+        }
+    }
+    
+    return arrayLessThan50
+}
 
-
-
-
-
-
-
+sortingForLessThan50(arg1: arrayOfInts)
+print(rejectedNumberCount)
