@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var shoppingList: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,8 +25,7 @@
  */
 // write your code here
 
-
-
+var list: [Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +35,11 @@
  */
 // write your code here
 
-
+var anotherList: [Int] = []
+for i in 1...10 {
+    anotherList.append(i)
+}
+print(anotherList)
 
 
 
@@ -47,7 +50,9 @@
  */
 // write your code here
 
-
+for i in shoppingList {
+    print("\(i) is on the shopping list.")
+}
 
 
 
@@ -58,8 +63,12 @@
  */
 // write your code here
 
-
-
+func printShoppingListItems (list: [String]) {
+    for i in list {
+        print("One of the items on the list is \(i).")
+    }
+}
+printShoppingListItems(list: shoppingList)
 
 
 
@@ -69,8 +78,17 @@
  */
 // write your code here
 
+var namesArray: [String] = ["Jenny", "Brian", "Ben", "Jason", "Michael", "Angel"]
 
-
+func printGreeting (namesArray: [String]) {
+    for i in namesArray{
+        if i == "Michael" {
+            print("Top of the moring \(i)!")
+        }
+        print("Good morning \(i)")
+    }
+}
+printGreeting(namesArray: namesArray)
 
 
 
@@ -79,7 +97,17 @@
  */
 // write your code here
 
-
+var intsArray : [Int] = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+func filteringInts (intsArray: [Int]) -> [Int] {
+    var filteredArray = [Int]()
+    for i in intsArray{
+        if i < 50 {
+            filteredArray.append(i)
+        }
+    }
+    return filteredArray
+}
+filteringInts(intsArray: intsArray)
 
 
 
