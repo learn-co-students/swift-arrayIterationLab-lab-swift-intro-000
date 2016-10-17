@@ -13,7 +13,7 @@
 /*: question1
  ### 1. You're building an app and want to store all of the ingredients added to a cart. How would you represent this cart in code? The ingredients are "Chips", "Salsa", "Guacamole", "Red wine". Explicitly mark the content of the cart as strings.
  */
-// write your code here
+let cart:[String] = ["Chips","Salsa","Guacamole","Red Wine"]
 
 
 
@@ -23,8 +23,7 @@
 /*: question2
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code? Explicitly mark the content of the cart as numbers.
  */
-// write your code here
-
+let numbers:[Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -35,7 +34,9 @@
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible.
  */
 // write your code here
-
+for number in numbers {
+ print(number)
+}
 
 
 
@@ -45,8 +46,9 @@
 /*: question4
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
  */
-// write your code here
-
+for cartItem in cart {
+print("Item Required : \(cartItem)")
+}
 
 
 
@@ -56,8 +58,15 @@
 /*: question5
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
-// write your code here
+func printCart(itemName:String){
+print(itemName)
+}
 
+for cartItem in cart {
+
+    printCart(itemName: cartItem)
+
+}
 
 
 
@@ -69,7 +78,22 @@
  */
 // write your code here
 
+func greetPpl(pplNames:[String]){
 
+    for ppl in pplNames {
+    
+        if ppl == "Michael"{
+            print("Top of the morning \(ppl)")
+        }else {
+            print("Good morning \(ppl)")
+        }
+    
+    }
+
+}
+
+let pplName = ["Sura","Venk","Rama","Michael"]
+greetPpl(pplNames: pplName)
 
 
 
@@ -79,10 +103,19 @@
  */
 // write your code here
 
+let myints = [40,60,50,52,59,13,90,100,5,52,51,49]
+
+var less50array:[Int] = []
+
+for intval in myints {
+    if intval < 50{
+        less50array.append(intval)
+    }
+    
+}
 
 
-
-
+print(less50array)
 
 
 
