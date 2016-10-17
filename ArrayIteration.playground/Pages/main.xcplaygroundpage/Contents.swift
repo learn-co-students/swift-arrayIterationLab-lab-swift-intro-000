@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var cart:[String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,8 +25,7 @@
  */
 // write your code here
 
-
-
+let cartNum : [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -36,7 +35,9 @@
  */
 // write your code here
 
-
+for num in cartNum {
+    print(num)
+}
 
 
 
@@ -47,7 +48,9 @@
  */
 // write your code here
 
-
+for item in cart {
+    print("You added \(item) to your cart")
+}
 
 
 
@@ -58,8 +61,12 @@
  */
 // write your code here
 
-
-
+func cartValues() {
+    for item in cart {
+        print(item)
+    }
+}
+cartValues()
 
 
 
@@ -69,9 +76,17 @@
  */
 // write your code here
 
+func greeting(names:[String]) {
+    for name in names {
+        print("Good morning \(name)")
+        if name == "Michael" {
+            print("Top of the morning Michael")
+        }
+    }
+}
 
-
-
+var friends : [String] = ["Pedro", "Juan", "Michael", "John"]
+greeting(names: friends)
 
 
 /*: question7
@@ -80,7 +95,18 @@
 // write your code here
 
 
+func arrNum(nums:[Int]) -> [Int] {
+    var lessThan40 : [Int] = []
+    
+    for num in nums {
+        if num < 40 {
+            lessThan40 += [num]
+        }
+    }
+    return lessThan40
+}
 
+arrNum(nums: [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49])
 
 
 
