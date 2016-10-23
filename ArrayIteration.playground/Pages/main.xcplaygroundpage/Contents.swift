@@ -36,7 +36,11 @@ var numbers: [Int] = [1,2,3,4,5,6,7,8,9,10]
 /*: question3
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible.
  */
-print(numbers)
+for number in numbers {
+    
+    print(number)
+}
+
 
 
 
@@ -48,7 +52,12 @@ print(numbers)
 /*: question4
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
  */
-print(ingredients)
+for ingredient in ingredients {
+    
+    print(ingredients)
+    
+}
+
 
 
 
@@ -61,8 +70,12 @@ print(ingredients)
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
 // write your code here
+func printIngredients(ingredients:String)
+{
 
-
+print(ingredients)
+    
+}
 
 
 
@@ -73,36 +86,39 @@ print(ingredients)
  */
 
 
-func message (name: Array<String>) -> String {
+func message (names: [String]) -> String {
 
-if name == "Michael"
-
-{ return "Top of the morning Michael"
-
-
-    }
+    for name in names {
+        
+        if name == "Michael"
+        
+        {
+            
+    print ("Top of the morning Micahel")
+            
+        }    else {
+            
+            
     
-else {
-    
-    "Good morning \(name)"
+   print("Good morning \(name)")
+            }
 
-
-    }
-    print(message(name: ["Michael"]))
+   let named = ["bob", "chloe", "Michael"]
+        
+  message(names: named)
     
 /*: question7
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
     func lessThanFifty (numbers: [Int]) -> Int {
 
-        var lessFifty = 0
+        var lessFifty:[Int] = []
 
         for number in numbers {
 
-            if number <50 {
-
-                lessFifty +=1
-}
+            if number < 50 {
+lessThanFifty; +=1
+               }
 
 }
         
@@ -110,15 +126,11 @@ else {
         
     }
 
+    }
 let numbersFromArray = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
 
         
-        
 print(lessThanFifty(numbers: numbersFromArray))
-
-
-
-
 
 
 
