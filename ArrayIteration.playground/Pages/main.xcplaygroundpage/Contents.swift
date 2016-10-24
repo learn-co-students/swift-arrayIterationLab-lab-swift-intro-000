@@ -110,31 +110,28 @@ func message (names: [String]) -> String {
 /*: question7
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
-    func lessThanFifty (numbers: [Int]) -> Int {
 
-        var lessFifty:[Int] = []
+        
+        
+        func lessThanFifty (numbers: [Int]) -> [Int] {
+
+        var less: [Int] = [Int]()
 
         for number in numbers {
 
             if number < 50 {
-lessThanFifty; +=1
+
+                less.append(number)
+                
                }
 
 }
         
-        return lessFifty
+        return less
         
     }
 
-    }
-let numbersFromArray = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
-
-        
-print(lessThanFifty(numbers: numbersFromArray))
-
-
-
-
+    print(lessThanFifty(numbers: [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]))
 
 
 
