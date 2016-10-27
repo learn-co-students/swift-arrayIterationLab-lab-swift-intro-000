@@ -85,9 +85,9 @@ for name in listOfNames {
  */
 var randomNumbers: [Int] = [40,60,50,52,59,14,90,100,5,52,52,49]
 
-func sortInts(digits: [Int]){
+func sortInts(digits: [Int]) -> [Int]{
     
-    var newRandomNumbers: [Int] = [ ]
+    var newRandomNumbers: [Int] = []
     
     for digit in digits {
         if digit < 50 {
@@ -95,7 +95,7 @@ func sortInts(digits: [Int]){
         }
     }
     
-    print(newRandomNumbers)
+    return newRandomNumbers
  
 }
 
