@@ -15,21 +15,13 @@
  */
 // write your code here
 
-
-
-
-
-
+var ingredients: [String] = ["Salsa","Guacamole","Red Wine"]
 /*: question2
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code? Explicitly mark the content of the cart as numbers.
  */
 // write your code here
 
-
-
-
-
-
+var list: [Int] = [1,2,3,4,5,6,7,8,9,10]
 
 /*: question3
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible.
@@ -37,22 +29,17 @@
 // write your code here
 
 
-
-
-
-
-
+for number in list {
+    print(number)
+}
 /*: question4
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
  */
 // write your code here
 
-
-
-
-
-
-
+for item in ingredients{
+    print("one of the ingredients is \(item)")
+}
 /*: question5
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
@@ -69,9 +56,19 @@
  */
 // write your code here
 
-
-
-
+//var names = ["Michael","Madan","Kamaraju"]
+//
+//func greetNames(list: [String]) {
+////    for name in list {
+////        if name == "Michael"{
+////            print("Top of the morning \(name)")
+////        } else{
+////            print("Good morning \(name)")
+////        }
+////}
+//}
+//greetNames(list: names)
+//
 
 
 /*: question7
@@ -79,10 +76,23 @@
  */
 // write your code here
 
+var arrayOfInts = [40,60,50,52,59,13,90,100,5,52,51,49]
+
+func intLessThan50(list: [Int]) -> [Int]{
+    
+    var reqArray : [Int] = []
+    
+    for item in list {
+        if item < 50 {
+            reqArray.append(item)
+        }
+    
+}
+return reqArray
+}
 
 
-
-
+intLessThan50(list: arrayOfInts)
 
 
 
