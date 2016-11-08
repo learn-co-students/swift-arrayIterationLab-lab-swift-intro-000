@@ -13,7 +13,7 @@
 /*: question1
  ### 1. You're building an app and want to store all of the ingredients added to a cart. How would you represent this cart in code? The ingredients are "Chips", "Salsa", "Guacamole", "Red wine". Explicitly mark the content of the cart as strings.
  */
-// write your code here
+var cartOfIngredients: [String] = ["Chips", "Salsa", "Gucamole", "Red Wine"]
 
 
 
