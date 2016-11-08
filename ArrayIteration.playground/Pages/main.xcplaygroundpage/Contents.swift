@@ -23,7 +23,7 @@ var cartOfIngredients: [String] = ["Chips", "Salsa", "Gucamole", "Red Wine"]
 /*: question2
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code? Explicitly mark the content of the cart as numbers.
  */
-// write your code here
+var listOfNumbers: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -34,7 +34,9 @@ var cartOfIngredients: [String] = ["Chips", "Salsa", "Gucamole", "Red Wine"]
 /*: question3
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible.
  */
-// write your code here
+for num in listOfNumbers {
+    print(num)
+}
 
 
 
@@ -45,7 +47,9 @@ var cartOfIngredients: [String] = ["Chips", "Salsa", "Gucamole", "Red Wine"]
 /*: question4
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
  */
-// write your code here
+for item in cartOfIngredients {
+    print("I added \(item) to the cart")
+}
 
 
 
