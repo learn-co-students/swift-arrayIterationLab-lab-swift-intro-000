@@ -60,7 +60,13 @@ for item in cartOfIngredients {
 /*: question5
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
-// write your code here
+func printCartItems(list: [String]) {
+    for item in list {
+        print("We have \(item) in the cart.")
+    }
+}
+
+printCartItems(list: cartOfIngredients)
 
 
 
@@ -71,9 +77,17 @@ for item in cartOfIngredients {
 /*: question6
  ### 4. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
-// write your code here
+func greeting(list: [String]) {
+    for name in list {
+        if name == "Michael" {
+            print("Top of the morning \(name)")
+        } else {
+            print("Good morning \(name).")
+        }
+    }
+}
 
-
+greeting(list: ["Bob", "Michael"])
 
 
 
@@ -81,8 +95,18 @@ for item in cartOfIngredients {
 /*: question7
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
-// write your code here
+var numsLessThan50: [Int] = []
 
+func lessThan50(numList: [Int]) -> [Int] {
+    for x in numList {
+        if x < 50 {
+            numsLessThan50.append(x)
+        }
+    }
+    return numsLessThan50
+}
+
+lessThan50(numList: [3, 67, 34])
 
 
 
