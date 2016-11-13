@@ -15,7 +15,8 @@
  */
 // write your code here
 
-
+var ingredients : [String]
+ingredients = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -26,7 +27,9 @@
 // write your code here
 
 
+var list : [Int]
 
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -39,8 +42,9 @@
 
 
 
-
-
+for i in list{
+    print(i)
+}
 
 /*: question4
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
@@ -49,7 +53,9 @@
 
 
 
-
+for i in ingredients{
+    print("item: \(i)")
+}
 
 
 
@@ -59,9 +65,13 @@
 // write your code here
 
 
+func print_items (item : String){
+    print(item)
+}
 
-
-
+for i in ingredients{
+    print_items(item: i)
+}
 
 
 /*: question6
@@ -69,9 +79,17 @@
  */
 // write your code here
 
+func greetings(names: [String]){
+    for i in names{
+        if i == "Michael"{
+            print("Top of the morning Michael!")
+        } else {
+            print("Good morning \(i)")
+        }
+    }
+}
 
-
-
+greetings(names:["Michael", "Angie", "Davie"])
 
 
 /*: question7
@@ -79,9 +97,20 @@
  */
 // write your code here
 
+var listb: [Int] = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
 
+func list_lessthan50(listme:[Int]) -> [Int] {
+    var newlist : [Int] = []
+    
+    for i in listme{
+        if i < 50 {
+            newlist.append(i)
+        }
+    }
+    return newlist
+}
 
-
+print(list_lessthan50(listme: listb))
 
 
 
