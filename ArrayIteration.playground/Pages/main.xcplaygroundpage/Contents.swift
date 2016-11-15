@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var ingredientCart: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -23,10 +23,7 @@
 /*: question2
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code? Explicitly mark the content of the cart as numbers.
  */
-// write your code here
-
-
-
+var numberList: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -36,8 +33,9 @@
  */
 // write your code here
 
-
-
+for number in numberList {
+    print(number)
+}
 
 
 
@@ -47,7 +45,9 @@
  */
 // write your code here
 
-
+for ingredient in ingredientCart {
+    print("I like \(ingredient)")
+}
 
 
 
@@ -58,7 +58,9 @@
  */
 // write your code here
 
-
+for ingredient in ingredientCart {
+    print(ingredient)
+}
 
 
 
@@ -69,6 +71,15 @@
  */
 // write your code here
 
+func greetings (listOfNames: [String]){
+    for name in listOfNames {
+        if name == "Michael"{
+            print ("Top of the morning Michael!")
+        } else {
+            print ("Good morning \(name)")
+        }
+    }
+}
 
 
 
@@ -79,9 +90,25 @@
  */
 // write your code here
 
+let testArray: [Int] = [40,60,50,52,59,13,90,100,5,52,51,49]
 
 
 
+
+func lessThanFifty (numbers: [Int]) -> Array<Int> {
+    
+    var underFifty: [Int] = []
+    
+    for number in numbers {
+        if number < 50{
+            underFifty.append(number)
+        }
+    }
+    
+    return underFifty
+}
+
+lessThanFifty(numbers: testArray)
 
 
 
