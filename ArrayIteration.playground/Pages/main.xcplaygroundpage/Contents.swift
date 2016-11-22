@@ -15,8 +15,7 @@
  */
 // write your code here
 
-
-
+var cartContents: [String] = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -25,7 +24,7 @@
  */
 // write your code here
 
-
+var cartNumbers: [Int] = [1,2,3,4,5,6,8,9,10]
 
 
 
@@ -36,7 +35,10 @@
  */
 // write your code here
 
-
+for number in cartNumbers
+{
+    print(number)
+}
 
 
 
@@ -47,7 +49,10 @@
  */
 // write your code here
 
-
+for content in cartContents
+{
+    print("Item: \(content)")
+}
 
 
 
@@ -58,8 +63,14 @@
  */
 // write your code here
 
+func writeList(itemName: String)
+{
+    print(itemName)
+}
 
-
+for content in cartContents {
+    writeList(itemName: content)
+}
 
 
 
@@ -69,8 +80,27 @@
  */
 // write your code here
 
+func sayHello(listOfNames: [String]) {
+    var prefixString: String
+    
+    for currentName in listOfNames
+    {
+        if currentName == "Happy"
+        {
+            prefixString = "Top o' the morning to ya"
+        }
+        else
+        {
+            prefixString = "Hello"
+        }
+    
+        print("\(prefixString), \(currentName)!")
+    }
+}
 
+var personsNames: [String] = ["Happy", "Sleepy", "Grumpy", "Dopey", "Doc", "Itchy", "Scratchy"]
 
+sayHello(listOfNames: personsNames)
 
 
 
@@ -80,9 +110,27 @@
 // write your code here
 
 
+func sortIntegersLessThanFifty(currentNumbers: [Int]) -> [Int]
+{
+    var sortedNumbers: [Int] = []
+    
+    for currentNumber in currentNumbers {
+        if currentNumber < 50
+        {
+            sortedNumbers.append(currentNumber)
+        }
+    }
+    
+    return sortedNumbers
+}
 
+let selectedNumbers: [Int] = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+let sortedValues: [Int] = sortIntegersLessThanFifty(currentNumbers: selectedNumbers)
 
-
+for value in sortedValues
+{
+    print(value)
+}
 
 
 
