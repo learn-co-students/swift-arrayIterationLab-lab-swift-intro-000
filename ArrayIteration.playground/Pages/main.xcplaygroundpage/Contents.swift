@@ -16,7 +16,7 @@
 // write your code here
 
 
-
+var ingredients: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+let numbers: [Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +36,9 @@
  */
 // write your code here
 
-
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -48,7 +50,9 @@
 // write your code here
 
 
-
+for ingredient in ingredients {
+    print(ingredient)
+}
 
 
 
@@ -57,6 +61,9 @@
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
 // write your code here
+for ingredient in ingredients {
+    print(ingredient)
+}
 
 
 
@@ -69,7 +76,15 @@
  */
 // write your code here
 
-
+func greet(names: [String]) {
+    for name in names {
+        if name == "Michael" {
+            print("Top of the morning Michael!")
+        } else {
+            print("Good morning \(name)")
+        }
+    }
+}
 
 
 
@@ -79,10 +94,18 @@
  */
 // write your code here
 
+func nums(ints: [Int])->[Int] {
+    var numbers: [Int] = []
+    for num in ints {
+        if num < 50 {
+            numbers.append(num)
+        }
+    }
+    return numbers
+}
 
 
 
-
-
+nums(ints: [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49])
 
 
