@@ -15,8 +15,7 @@
  */
 // write your code here
 
-
-
+let ingredients = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,7 +24,7 @@
  */
 // write your code here
 
-
+let int_arry = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +35,9 @@
  */
 // write your code here
 
-
+for numder in int_arry {
+    print("the number \(numder)")
+}
 
 
 
@@ -47,7 +48,9 @@
  */
 // write your code here
 
-
+for ingradient in ingredients {
+    print("the gradiant= \(ingredients)")
+}
 
 
 
@@ -60,8 +63,12 @@
 
 
 
-
-
+func prin_the_ing( ing :String) {
+    print("the ingradiant is \(ing)")
+}
+for ingr in ingredients {
+    prin_the_ing(ing: ingr)
+}
 
 
 /*: question6
@@ -69,7 +76,15 @@
  */
 // write your code here
 
-
+let names = ["Michael","asia","soso","popo","dodo"]
+func prin_greeting(name :String) {
+    if (name == "Michael") {
+        print("Top of the morning Michael!")
+    }
+    else {
+        print("Good morning  \(name)")
+    }
+}
 
 
 
@@ -80,7 +95,17 @@
 // write your code here
 
 
+func less_int (the_ar :[Int]) -> [Int] {
+    var x :[Int] = []
+    for the_num in the_ar {
+        if the_num < 50 {
+            x.append(the_num)
+        }
+    }
+    return x
+}
 
+var z = less_int(the_ar: [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49])
 
 
 
