@@ -14,6 +14,8 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart. How would you represent this cart in code? The ingredients are "Chips", "Salsa", "Guacamole", "Red wine". Explicitly mark the content of the cart as strings.
  */
 // write your code here
+var cart: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
+
 
 
 
@@ -23,7 +25,9 @@
 /*: question2
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code? Explicitly mark the content of the cart as numbers.
  */
-// write your code here
+var numberstoten: [Int] = [1,2,3,4,5,6,7,8,9,10]
+
+
 
 
 
@@ -36,6 +40,9 @@
  */
 // write your code here
 
+for number in numberstoten{
+    print(number)
+}
 
 
 
@@ -47,6 +54,10 @@
  */
 // write your code here
 
+for item in cart {
+    print( "I can't wait to get", item)
+}
+
 
 
 
@@ -57,7 +68,13 @@
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
 // write your code here
+func printcart () {
+    for item in cart {
+        print(item)
+    }
+}
 
+printcart()
 
 
 
@@ -69,8 +86,15 @@
  */
 // write your code here
 
-
-
+func goodMorning (Array: [String]) {
+    for name in Array {
+        print("Good Morning", name)
+            if name == "Michael"{
+                print("Top of the morning", name)
+    }
+    }}
+    var namesOfPeople = ["Sarah", "Raquel", "Ashley", "Michael", "Alex"]
+goodMorning(Array: namesOfPeople)
 
 
 
@@ -79,6 +103,20 @@
  */
 // write your code here
 
+
+var ints = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+
+func lessthan50 (grades:[Int]) {
+    var numberslessthan: [Int] = []
+    for grade in grades {
+        if grade < 50 {
+            numberslessthan.append(grade)
+        }
+    print(numberslessthan)
+    }
+}
+
+lessthan50(grades: ints)
 
 
 
