@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var ingredients: [String] = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -25,6 +25,12 @@
  */
 // write your code here
 
+var numbers = [Int]()
+
+for i in 1...10 {
+    
+    numbers.append(i)
+}
 
 
 
@@ -36,6 +42,10 @@
  */
 // write your code here
 
+for number in numbers {
+    
+    print(number)
+}
 
 
 
@@ -46,6 +56,11 @@
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
  */
 // write your code here
+
+for ingredient in ingredients {
+    
+    print ("Ingredient: \(ingredient)")
+}
 
 
 
@@ -59,17 +74,34 @@
 // write your code here
 
 
+func printIngredients(ingredients: [String]) {
+    
+    for ingredient in ingredients {
+        
+        print (ingredient)
+    }
+}
 
-
-
-
+printIngredients(ingredients: ingredients)
 
 /*: question6
  ### 4. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
 // write your code here
 
-
+func greeting(names: [String]) {
+    
+    for name in names {
+        
+        if name == "Michael" {
+            
+            print ("Top of the morning Michael!")
+        
+        } else {
+            print("Good morning \(name)")
+        }
+    }
+}
 
 
 
@@ -78,6 +110,33 @@
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
+
+
+func arrayOfInts(numbers: [Int]) -> [Int] {
+    
+    var newArray = [Int]()
+    
+    for number in numbers {
+        
+        if number < 50 {
+            
+            newArray.append(number)
+        }
+        
+        
+    }
+    
+    return newArray
+    
+}
+
+
+let array = [40, 60, 50, 52, 59, 13, 90, 100, 5,52,51,49]
+
+arrayOfInts(numbers: array)
+
+
+
 
 
 
