@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var ingredients:[String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,6 +25,7 @@
  */
 // write your code here
 
+let numbers = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -37,6 +38,7 @@
 // write your code here
 
 
+print(numbers)
 
 
 
@@ -48,6 +50,7 @@
 // write your code here
 
 
+print(ingredients)
 
 
 
@@ -59,10 +62,16 @@
 // write your code here
 
 
+func numberOfIngredients(ingredient: [String]) -> String {
 
 
+let ingredientes:[String] = ["Chips", "Salsa", "Guacamole", "Red wine",]
 
+print(numberOfIngredients(ingredient: ingredientes))
 
+    return numberOfIngredients(ingredient: ingredientes)
+    
+}
 
 /*: question6
  ### 4. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
@@ -70,7 +79,19 @@
 // write your code here
 
 
+func greetings(nombres: [String]) -> String {
+    
+    let names:[String] = ["Michael", "Jose", "Beatriz", "Juana",]
 
+    if names == ["Michale"]{
+        print("Top of the morning", names)
+    }
+    
+    print("Good Morning", greetings(nombres: names))
+    
+    return greetings(nombres: names)
+    
+}
 
 
 
@@ -80,7 +101,21 @@
 // write your code here
 
 
+func numberOfIntsLessThan50(numeros: [Int]) -> Int {
+    var numberBelow50 = 0
+    
+    for number in numeros {
+        if number >= 70 {
+            numberBelow50 += 1
+        }
+    }
+    
+    return numberBelow50
+}
 
+let listOfNumbers = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+
+print(numberOfIntsLessThan50(numeros: listOfNumbers))
 
 
 
