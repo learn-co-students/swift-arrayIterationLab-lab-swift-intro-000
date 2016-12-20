@@ -14,7 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart. How would you represent this cart in code? The ingredients are "Chips", "Salsa", "Guacamole", "Red wine". Explicitly mark the content of the cart as strings.
  */
 // write your code here
-
+var ingredients: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,9 +25,10 @@
  */
 // write your code here
 
-
-
-
+var numbers = [Int]()
+for i in 1...10 {
+    numbers.append(i)
+}
 
 
 
@@ -35,9 +36,9 @@
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible.
  */
 // write your code here
-
-
-
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -47,7 +48,9 @@
  */
 // write your code here
 
-
+for ingredient in ingredients {
+    print("Ingredient: \(ingredient)")
+}
 
 
 
@@ -58,10 +61,14 @@
  */
 // write your code here
 
+func printIngredients(ingredients: [String]) {
+    for ingredient in ingredients {
+        print(ingredient)
+    }
+}
 
 
-
-
+printIngredients(ingredients: ingredients)
 
 
 /*: question6
@@ -69,7 +76,15 @@
  */
 // write your code here
 
-
+func greeting(names: [String]) {
+    for name in names {
+        if name == "Michael" {
+            print("Top of the morning \(name)")
+        } else {
+            print("Good morning \(name)")
+        }
+    }
+}
 
 
 
@@ -79,6 +94,20 @@
  */
 // write your code here
 
+func arrayOfInts(numbers: [Int]) -> [Int] {
+    var newArray = [Int]()
+    
+    for number in numbers {
+        if number > 50 {
+            newArray.append(number)
+        }
+    }
+    return newArray
+}
+
+let array: [Int] = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+
+arrayOfInts(numbers: array)
 
 
 
