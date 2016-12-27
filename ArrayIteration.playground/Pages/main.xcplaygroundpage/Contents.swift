@@ -16,7 +16,7 @@
 // write your code here
 
 
-
+let cart:[String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -26,7 +26,7 @@
 // write your code here
 
 
-
+let cart2:[Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -37,7 +37,9 @@
 // write your code here
 
 
-
+for int in cart2 {
+    print( "Number \(int)")
+}
 
 
 
@@ -48,7 +50,9 @@
 // write your code here
 
 
-
+for ingrediants in cart {
+    print("Gimme some \(ingrediants)")
+}
 
 
 
@@ -59,9 +63,13 @@
 // write your code here
 
 
+func Forthegods(ingrediants:[String]){
+    for ingrediant in ingrediants {
+        print("Got me some \(ingrediant)")
+    }
+}
 
-
-
+Forthegods(ingrediants: cart)
 
 
 /*: question6
@@ -70,17 +78,38 @@
 // write your code here
 
 
+func InequalityIsReal(Names:[String]){
+    for name in Names {
+        print("Good morning \(name)")
+        if name == "Michael"{
+            print("Top of the monring Micahel")
+    }
+}
+}
 
+let Names = ["Billy", "Gunther", "Rasha", "Sharkesha", "Michael", "Cyruss", "Augusto"]
 
-
-
+InequalityIsReal(Names: Names)
 /*: question7
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
 
 
+let IQsoftheClass = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
 
+func LowIQExposinator(IQs:[Int])->[Int] {
+    var IQsbelow50:[Int] = []
+    
+    for IQ in IQs {
+        if  IQ <= 50{
+        IQsbelow50.append(IQ)
+        }
+    }
+    return IQsbelow50
+}
+
+LowIQExposinator(IQs: IQsoftheClass)
 
 
 
