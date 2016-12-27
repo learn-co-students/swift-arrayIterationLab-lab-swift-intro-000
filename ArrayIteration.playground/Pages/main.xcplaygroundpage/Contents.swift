@@ -1,19 +1,20 @@
 /*: Outline
- 
- 
+
+
  # Arrays & array iteration
- 
+
  ### Readings associated with this lab
- 
+
  * [Array](https://github.com/learn-co-curriculum/swift-array-readme)
  * [Array Iteration](https://github.com/learn-co-curriculum/swift-arrayIteration-readme)
- 
+
 
  */
 /*: question1
  ### 1. You're building an app and want to store all of the ingredients added to a cart. How would you represent this cart in code? The ingredients are "Chips", "Salsa", "Guacamole", "Red wine". Explicitly mark the content of the cart as strings.
  */
 // write your code here
+ingredients: String = ["Chips", "Salsa", "Guacamole", "Red wine"];
 
 
 
@@ -78,11 +79,3 @@
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
-
-
-
-
-
-
-
-
