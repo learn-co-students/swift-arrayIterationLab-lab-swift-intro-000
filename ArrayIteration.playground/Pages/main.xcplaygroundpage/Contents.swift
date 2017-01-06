@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var cart: [String] = ["Chips", "Salse", "Guacamole", "Red Wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+var list: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -37,7 +37,7 @@
 // write your code here
 
 
-
+print(list)
 
 
 
@@ -47,6 +47,9 @@
  */
 // write your code here
 
+for item in cart {
+    print("I need to buy \(item)")
+}
 
 
 
@@ -58,8 +61,13 @@
  */
 // write your code here
 
+func printCart(_: [String]) {
+    for item in cart {
+        print("\(item)")
+    }
+}
 
-
+printCart(cart)
 
 
 
@@ -69,9 +77,18 @@
  */
 // write your code here
 
+let names: [String] = ["Joe", "Shmoe", "Bill", "Bo", "Michael"]
 
-
-
+func greeting(_: [String]) {
+    for name in names {
+        if name == "Michael" {
+            print("Top of the morning Michael!")
+        } else {
+             print("Good Morning \(name)")
+        }
+    }
+}
+greeting(names)
 
 
 /*: question7
@@ -79,10 +96,19 @@
  */
 // write your code here
 
+var gradesGiven: [Int] = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
 
+func lessThan50(numbers: [Int]) -> [Int] {
+    var newList: [Int] = []
+    
+    for num in numbers {
+        if num < 50 {
+            newList.append(num)
+        }
+    }
+     return newList
+}
 
-
-
-
+print(lessThan50(numbers: gradesGiven))
 
 
