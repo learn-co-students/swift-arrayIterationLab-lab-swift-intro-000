@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var cartItems: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -27,8 +27,9 @@
 
 
 
+var listNumbers: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-
+// Do not understand task "Explicitly mark the content of the cart as numbers."
 
 
 /*: question3
@@ -37,7 +38,9 @@
 // write your code here
 
 
-
+for number in listNumbers {
+    print(number)
+}
 
 
 
@@ -47,9 +50,10 @@
  */
 // write your code here
 
-
-
-
+for cartItem in cartItems {
+    print(cartItem)
+}
+// Do not understand the task "Prefix each item in the array with a string of text."
 
 
 
@@ -58,9 +62,13 @@
  */
 // write your code here
 
+func printItem(item: String){
+    print(item)
+}
 
-
-
+for item in cartItems {
+    printItem(item: item)
+}
 
 
 
@@ -70,9 +78,20 @@
 // write your code here
 
 
+let persons: [String] = ["Rimvydas", "Mingaile", "Michael"]
 
+func greeting(persons: [String]){
+    for person in persons {
+        if person == "Michael" {
+            print("Top of the morning \(person)!")
+        }
+        else {
+            print("Good morning \(person)")
+        }
+    }
+}
 
-
+greeting(persons: persons)
 
 /*: question7
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
@@ -80,9 +99,19 @@
 // write your code here
 
 
+let ints: [Int] = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
 
+func filter (ints: [Int]) -> [Int] {
+    var out: [Int] = []
+    for inta in ints {
+        if inta < 50 {
+            out.append(inta)
+        }
+    }
+    return out
+}
 
-
+filter(ints: ints)
 
 
 
