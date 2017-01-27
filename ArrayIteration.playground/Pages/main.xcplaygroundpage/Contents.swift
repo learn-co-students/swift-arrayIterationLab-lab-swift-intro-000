@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var cart = ["Chips", "Salsa", "Guacomole", "Red wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -36,7 +36,10 @@
  */
 // write your code here
 
-
+for number in numbers {
+    
+    print(number)
+}
 
 
 
@@ -47,7 +50,10 @@
  */
 // write your code here
 
-
+for item in cart {
+    
+    print(item)
+}
 
 
 
@@ -58,7 +64,24 @@
  */
 // write your code here
 
+func greeting(names:[String]) {
+    
+    for name in names {
+        
+        if name == "Michael" {
+            
+            print("Top of the morning Michael!")
+            
+        } else {
+            
+            print("Good morning \(name)")
+        }
+    }
+    
+}
 
+var randomNames = ["John", "David", "Michael", "Jill"]
+greeting(names: randomNames)
 
 
 
@@ -68,7 +91,23 @@
  */
 // write your code here
 
+func lessThan50(numbers:[Int]) -> [Int] {
+    
+    var finalResults = [Int]()
+    
+    for number in numbers {
+        
+        if number < 50 {
+            
+            finalResults.append(number)
+        }
+    }
+    
+    return finalResults
+}
 
+var randomNumbers = [2, 44, 98, 102, 33, 4, 67, 208, 498]
+lessThan50(numbers: randomNumbers)
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
