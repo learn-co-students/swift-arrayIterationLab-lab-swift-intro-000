@@ -83,7 +83,20 @@ greeting(name: ["George", "Fred", "Sheilla", "Michael"])
  */
 func numbersLessThan50(numbers: [Int]) -> [Int] {
     
+    var fiftyOrLess: [Int] = []
+    
+    for number in numbers {
+        if number < 50 {
+            fiftyOrLess.append(number)
+           
+        }
+       
+    }
+    print(fiftyOrLess)
+     return fiftyOrLess.sorted()
 }
+
+numbersLessThan50(numbers: [55, 60, 25, 33, 12, 1, 75, 6, 8, 100])
 
 
 
