@@ -83,9 +83,12 @@ for number in numbers{
     if number < 50 {
         weAreLessThanFity.append(number)
     }
+}
     return weAreLessThanFity
 }
 
+let randomNumbers = [1, 5, 66, 78, 5, 4, 79, 10000, 42, 24 ,32, 16, 600]
+print(areWeLessThanFity(numbers: randomNumbers))
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
 
