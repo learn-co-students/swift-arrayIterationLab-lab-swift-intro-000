@@ -16,7 +16,7 @@
 // write your code here
 
 
-
+var currentlyInCart = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -26,7 +26,7 @@
 // write your code here
 
 
-
+var list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -37,7 +37,9 @@
 // write your code here
 
 
-
+for number in list {
+    print(number)
+}
 
 
 
@@ -47,7 +49,9 @@
  */
 // write your code here
 
-
+for ingredient in currentlyInCart{
+    print(ingredient)
+}
 
 
 
@@ -58,8 +62,14 @@
  */
 // write your code here
 
+var names = ["Lysistra", "Diane", "Zuliema", "Serena", "Michael"]
 
-
+for person in names{
+    print("Good Morning \(person)" )
+    if person == "Michael" {
+        print("Top of the Morning \(person)")
+    }
+}
 
 
 
@@ -67,9 +77,14 @@
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
-
-
-
+func areWeLessThanFity(numbers: [Int]) -> [Int] {
+    var weAreLessThanFity: [Int] = []
+for number in numbers{
+    if number < 50 {
+        weAreLessThanFity.append(number)
+    }
+    return weAreLessThanFity
+}
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
