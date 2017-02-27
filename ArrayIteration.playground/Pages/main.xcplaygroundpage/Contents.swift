@@ -15,9 +15,7 @@
  */
 // write your code here
 
-
-
-
+let shoppingCarts = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 /*: question2
@@ -25,7 +23,7 @@
  */
 // write your code here
 
-
+let numbersList = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,10 +34,9 @@
  */
 // write your code here
 
-
-
-
-
+for number in numbersList {
+    print(number)
+}
 
 
 /*: question4
@@ -47,7 +44,9 @@
  */
 // write your code here
 
-
+for sc in shoppingCarts {
+    print(sc)
+}
 
 
 
@@ -57,10 +56,19 @@
  ### 5. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
 // write your code here
+let persons = ["Alif", "Masum", "Eva"]
 
+func greets(names: [String])  {
+    for name in names {
+        if name == "Alif" {
+            print("Good Moring \(name)")
+        } else {
+            print("Good afternoon \(name)")
+        }
+    }
+}
 
-
-
+greets(names: persons)
 
 
 /*: question6
@@ -68,8 +76,20 @@
  */
 // write your code here
 
+func arrayInt(int: Array<Int>) -> [Int] {
+    var integers: [Int] = []
+    
+    for i in int {
+        if i < 50 {
+            integers.append(i)
+        }
 
+    }
+    
+    return integers
+}
 
+arrayInt(int: [1,2,3,4,5,6,70])
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
