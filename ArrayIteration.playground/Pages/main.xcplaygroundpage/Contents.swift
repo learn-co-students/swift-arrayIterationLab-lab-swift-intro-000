@@ -26,7 +26,7 @@
 // write your code here
 
 
-
+var numbers: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 
@@ -36,7 +36,9 @@
  */
 // write your code here
 
-
+for num in numbers {
+    print(num);
+}
 
 
 
