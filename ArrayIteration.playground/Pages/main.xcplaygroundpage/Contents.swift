@@ -15,6 +15,7 @@
  */
 // write your code here
 
+let ingredients = ["Chips","Salsa","Guacamole","Red wine",]
 
 
 
@@ -25,10 +26,7 @@
  */
 // write your code here
 
-
-
-
-
+let numbers = [1,2,3,4,5,6,7,8,9,10]
 
 
 /*: question3
@@ -36,7 +34,9 @@
  */
 // write your code here
 
-
+for number in numbers{
+    print(numbers)
+}
 
 
 
@@ -48,7 +48,9 @@
 // write your code here
 
 
-
+for ingredient in ingredients{
+    print(ingredient)
+}
 
 
 
@@ -58,18 +60,39 @@
  */
 // write your code here
 
+let characters = ["Steve", "James", "Michael"]
 
-
-
+func greetings(names: [String]){
+    
+    for name in names {
+    if name == "Michael" {
+        print("Top of the morning Michael")
+    }else {
+            print("Good moring \(name)")
+        }
+    }
+    
+    
+}
+print(greetings(names: characters))
 
 
 /*: question6
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
+let thisNunmber = [35, 30, 55, 67, 70, 100, 1, 5]
 
-
-
+func numberLessThen50(numbers: [Int])-> [Int] {
+    var numberLess50: [Int] = []
+    for number in numbers {
+        if number < 50{
+            numberLess50.append(number)
+        }
+    }
+    return numberLess50
+}
+print(numberLessThen50(numbers: thisNunmber))
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
