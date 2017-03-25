@@ -35,7 +35,7 @@ var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible. (Hint: for-in loop).
  */
 for number in numbers {
-    print(numbers)
+    print(number)
 }
 
 
@@ -46,7 +46,7 @@ for number in numbers {
  ### 4. Take the list of shopping cart items you created in question 1 and iterate through it printing each item to the console.
  */
 for item in ingredients {
-    print(ingredients)
+    print(item)
 }
 
 
@@ -69,9 +69,7 @@ func greet(names: [String]) {
     
 }
 
- var friend = ["Temi", "Kum", "Van", "Micheal, Wurry"]
 
-greet(names: friend)
 /*: question6
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
