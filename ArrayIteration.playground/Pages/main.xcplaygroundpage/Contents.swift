@@ -14,8 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart into an `Array`. The ingredients are "Chips", "Salsa", "Guacamole", and "Red wine". Name this `Array` variable whatever you like, think of a name which makes sense.
  */
 // write your code here
-
-
+var cartContents: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,7 +24,7 @@
  */
 // write your code here
 
-
+var numbers: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -36,7 +35,9 @@
  */
 // write your code here
 
-
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -47,7 +48,9 @@
  */
 // write your code here
 
-
+for item in cartContents {
+    print(item)
+}
 
 
 
@@ -59,18 +62,39 @@
 // write your code here
 
 
+var names: [String] = ["Micheal", "John", "Chris", "Justin", "Doomsday", "Superman"]
 
+func greetings(listOfNames: [String]) {
+    for name in names {
+        if name == "Micheal" {
+            print("Top of the morning Micheal!")
+        } else {
+            print("Good morning \(name)")
+        }
+    }
+}
 
-
-
+greetings(listOfNames: names)
 /*: question6
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
 
+func lessThan50(listOfNumbers: [Int]) -> [Int] {
+    var returnArray: [Int] = []
+    
+    for number in listOfNumbers {
+        if number < 50 {
+            returnArray.append(number)
+        }
+    }
+    return returnArray
+}
+    
 
+var sampleArray: [Int] = [50, 27, 19, 88, 29, 908, 39, 293, 123, 654, 384, 1, 2, 3,]
 
-
+lessThan50(listOfNumbers: sampleArray)
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
 
