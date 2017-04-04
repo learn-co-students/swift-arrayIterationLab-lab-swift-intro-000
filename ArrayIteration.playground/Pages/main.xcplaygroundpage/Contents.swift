@@ -14,7 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart into an `Array`. The ingredients are "Chips", "Salsa", "Guacamole", and "Red wine". Name this `Array` variable whatever you like, think of a name which makes sense.
  */
 // write your code here
-
+var ingredients = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,9 +25,7 @@
  */
 // write your code here
 
-
-
-
+var list = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +34,9 @@
  */
 // write your code here
 
-
+for numbers in list {
+    print(numbers)
+}
 
 
 
@@ -47,7 +47,9 @@
  */
 // write your code here
 
-
+for ingredient in ingredients {
+    print(ingredient)
+}
 
 
 
@@ -58,19 +60,39 @@
  */
 // write your code here
 
+//var names = ["Mary", "Alice", "Vera", "Michael"]
 
+func greeting(names: [String]) {
 
-
-
+    for name in names {
+        print("Good morning \(name)!")
+        
+        if name == "Michael" {
+            print("Top of the morning Michael!")
+        }
+    }
+    
+}
 
 /*: question6
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
-// write your code here
+//write your code here
 
-
-
-
+func ints (numbers: [Int]) -> [Int] {
+    
+    var result: [Int] = []
+    
+    for number in numbers {
+        
+        if number < 50 {
+            result.append(number)
+        }
+        
+    }
+    
+    return result
+}
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
 
