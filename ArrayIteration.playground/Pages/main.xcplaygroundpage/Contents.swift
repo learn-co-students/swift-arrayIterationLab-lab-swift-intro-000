@@ -17,7 +17,7 @@
 
 
 
-
+var cart =  ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 /*: question2
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+var nums : [Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -38,6 +38,9 @@
 
 
 
+for n in nums{
+    print ("\(n)")
+}
 
 
 
@@ -48,7 +51,9 @@
 // write your code here
 
 
-
+for item in cart {
+    print ("\(item)")
+}
 
 
 
@@ -59,6 +64,11 @@
 // write your code here
 
 
+func greeter (_ name : [String]){
+    for i in name{
+        print ("Good morning \(i)")
+    }
+}
 
 
 
@@ -69,7 +79,16 @@
 // write your code here
 
 
-
+func ints(_ listofNums : [Int]) -> [Int]
+{
+    var newNums : [Int] = []
+    for i in listofNums{
+        if i < 50 {
+            newNums.append(i)
+        }
+    }
+    return newNums
+}
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
