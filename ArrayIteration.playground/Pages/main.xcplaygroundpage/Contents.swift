@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var shoppingCart = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+let numberList = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,6 +36,9 @@
  */
 // write your code here
 
+for number in numberList {
+    print(number)
+}
 
 
 
@@ -47,7 +50,9 @@
  */
 // write your code here
 
-
+for item in shoppingCart {
+    print(item)
+}
 
 
 
@@ -59,6 +64,16 @@
 // write your code here
 
 
+func grettings(names: [String]) {
+    for person in names {
+        if person == "Michael" {
+            print("Top of the morning Michael!")
+        } else {
+            print("Good morning \(person)")
+        }
+    }
+}
+
 
 
 
@@ -68,6 +83,17 @@
  */
 // write your code here
 
+
+func generateNewArray(array: [Int]) -> [Int] {
+    var newArray: [Int] = []
+    
+    for number in array {
+        if number < 50 {
+            newArray.append(number)
+        }
+    }
+    return newArray
+}
 
 
 
