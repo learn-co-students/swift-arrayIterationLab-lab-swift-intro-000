@@ -14,9 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart into an `Array`. The ingredients are "Chips", "Salsa", "Guacamole", and "Red wine". Name this `Array` variable whatever you like, think of a name which makes sense.
  */
 // write your code here
-
-
-
+var cart = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,21 +23,17 @@
  */
 // write your code here
 
-
-
-
-
+var list : [Int] = Array(1...10)
 
 
 /*: question3
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible. (Hint: for-in loop).
  */
 // write your code here
-
-
-
-
-
+for number in list
+{
+    print(number)
+}
 
 
 /*: question4
@@ -47,10 +41,9 @@
  */
 // write your code here
 
-
-
-
-
+for ing in cart {
+    print(ing)
+}
 
 
 /*: question5
@@ -58,9 +51,18 @@
  */
 // write your code here
 
-
-
-
+func greet(names: [String]) {
+    
+    for name in names {
+        if name == "Michael" {
+            print("Top of the morning \(name)!")
+        }
+        else {
+            print("Good morning \(name)")
+        }
+    }
+    
+}
 
 
 /*: question6
@@ -68,7 +70,19 @@
  */
 // write your code here
 
-
+func greet(list: [Int]) -> [Int] {
+    
+    var returnList = [Int]()
+    
+    for no in list {
+        if no < 50 {
+            returnList.append(no)
+        }
+    }
+    
+    return returnList
+    
+}
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
