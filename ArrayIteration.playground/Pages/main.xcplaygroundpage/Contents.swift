@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var ingredients = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -25,8 +25,7 @@
  */
 // write your code here
 
-
-
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -36,7 +35,9 @@
  */
 // write your code here
 
-
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -47,10 +48,9 @@
  */
 // write your code here
 
-
-
-
-
+for ingredient in ingredients {
+    print(ingredient)
+}
 
 
 /*: question5
@@ -58,9 +58,15 @@
  */
 // write your code here
 
+var names = ["Michael", "Maddie", "Mercedes", "Sarah"]
 
-
-
+for name in names {
+    if name == "Michael" {
+        print("Top of the Morning, \(name)!")
+    } else {
+        print("Good Morning, \(name)!")
+    }
+}
 
 
 /*: question6
@@ -68,9 +74,22 @@
  */
 // write your code here
 
+var arrayOfInts = [1, 68, 45, 99, 34, 99]
 
+func lessThanFifty(numbers: [Int]) -> [Int] {
+    
+    var sortedArray: [Int] = []
+    
+    for number in numbers {
+        if number < 50 {
+            sortedArray.append(number)
+        }
+    }
+    
+    return sortedArray
+}
 
-
+print(lessThanFifty(numbers: arrayOfInts))
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
 
