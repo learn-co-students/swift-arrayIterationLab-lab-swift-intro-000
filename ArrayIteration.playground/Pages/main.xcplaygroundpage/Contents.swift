@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var cart: [String] = ["Crisps", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -25,7 +25,15 @@
  */
 // write your code here
 
+var numbers: [Int] = []
+var counter = 1
+let upper = 10
+while counter <= upper {
+    numbers.append(counter)
+    counter += 1
+}
 
+print(numbers)
 
 
 
@@ -36,7 +44,9 @@
  */
 // write your code here
 
-
+for i in numbers {
+    print(i)
+}
 
 
 
@@ -48,7 +58,9 @@
 // write your code here
 
 
-
+for item in cart {
+    print(item)
+}
 
 
 
@@ -58,7 +70,15 @@
  */
 // write your code here
 
-
+func greeter(names: [String]) {
+    for name in names {
+        if name == "Michael" {
+            print("Top of the morning, Michael!")
+        } else {
+            print("Good morning \(name)")
+        }
+    }
+}
 
 
 
@@ -68,7 +88,17 @@
  */
 // write your code here
 
-
+func filterAbove50(numbers: [Int]) -> [Int] {
+    var filtered: [Int] = []
+    
+    for n in numbers {
+        if n < 50 {
+            filtered.append(n)
+        }
+    }
+    
+    return filtered
+}
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
