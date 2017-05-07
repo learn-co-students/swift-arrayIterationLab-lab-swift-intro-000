@@ -15,6 +15,7 @@
  */
 // write your code here
 
+ var ingredients = [ "Chips", "Salsa", "Guacamole","Red wine"]
 
 
 
@@ -25,8 +26,7 @@
  */
 // write your code here
 
-
-
+var oneToTen = Array(1...10)
 
 
 
@@ -36,6 +36,9 @@
  */
 // write your code here
 
+for number in oneToTen {
+    print(number)
+}
 
 
 
@@ -47,6 +50,9 @@
  */
 // write your code here
 
+for item in ingredients {
+    print(item)
+}
 
 
 
@@ -58,8 +64,12 @@
  */
 // write your code here
 
-
-
+func massGreeter(names: [String]) {
+    for name in names {
+        print("Good morning \(name)")
+    }
+}
+massGreeter(names: ["panos", "maria"])
 
 
 
@@ -67,7 +77,17 @@
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
+func lessThan50(array: [Int]) -> [Int] {
+    var result = [Int]()
+    for number in array {
+        if number < 50 {
+            result.append(number)
+        }
+    }
+    return result
+}
 
+lessThan50(array: [12, 14134, 14])
 
 
 
