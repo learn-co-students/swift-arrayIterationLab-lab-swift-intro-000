@@ -15,6 +15,7 @@
  */
 // write your code here
 
+var cart = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -24,7 +25,7 @@
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code?
  */
 // write your code here
-
+var numbers = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -35,6 +36,9 @@
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible. (Hint: for-in loop).
  */
 // write your code here
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -46,6 +50,9 @@
  ### 4. Take the list of shopping cart items you created in question 1 and iterate through it printing each item to the console.
  */
 // write your code here
+for item in cart {
+    print(item)
+}
 
 
 
@@ -58,9 +65,13 @@
  */
 // write your code here
 
+func greeting(names: [String]) {
+    for name in names {
+        print("Good morning \(name)")
+    }
+}
 
-
-
+greeting(names: ["felix","michael"])
 
 
 /*: question6
@@ -68,6 +79,14 @@
  */
 // write your code here
 
+func ints(numbers: [Int]) {
+    var intsLess50: [Int] = []
+    for number in numbers {
+        if number < 50 {
+            intsLess50.append(number)
+        }
+    }
+}
 
 
 
