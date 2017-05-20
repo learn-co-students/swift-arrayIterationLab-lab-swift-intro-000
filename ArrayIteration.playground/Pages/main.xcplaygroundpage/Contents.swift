@@ -13,9 +13,8 @@
 /*: question1
  ### 1. You're building an app and want to store all of the ingredients added to a cart into an `Array`. The ingredients are "Chips", "Salsa", "Guacamole", and "Red wine". Name this `Array` variable whatever you like, think of a name which makes sense.
  */
-// write your code here
 
-
+var ingredients = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,8 +24,10 @@
  */
 // write your code here
 
-
-
+var numArray = [Int]()
+for num in 1...10 {
+    numArray.append(num)
+}
 
 
 
@@ -36,7 +37,9 @@
  */
 // write your code here
 
-
+for num in numArray {
+    print(num)
+}
 
 
 
@@ -47,7 +50,9 @@
  */
 // write your code here
 
-
+for item in ingredients {
+    print(item)
+}
 
 
 
@@ -58,9 +63,17 @@
  */
 // write your code here
 
+func greet(names: [String]) {
+    for name in names {
+        if name == "Michael" {
+            print("Top of the morning \(name)!")
+        } else {
+            print("Good morning \(name)")
+        }
+    }
+}
 
-
-
+greet(names: ["A", "b", "Michael", "#F"])
 
 
 /*: question6
@@ -68,8 +81,11 @@
  */
 // write your code here
 
+func lessThan50(array: [Int]) -> [Int] {
+    return array.filter { $0 < 50 }
+}
 
-
+print(lessThan50(array: [1, 21323, 324, 25, 345, 22, 33, 44]))
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
