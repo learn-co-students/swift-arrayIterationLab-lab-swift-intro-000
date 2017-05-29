@@ -16,6 +16,7 @@
 // write your code here
 
 
+var ingredients = ["Chips","Salsa","Guacamole","Red Wine"]
 
 
 
@@ -26,6 +27,7 @@
 // write your code here
 
 
+var list = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +38,9 @@
  */
 // write your code here
 
-
+for printer in list {
+    print(printer)
+}
 
 
 
@@ -47,7 +51,9 @@
  */
 // write your code here
 
-
+for printer1 in ingredients {
+    print(printer1)
+}
 
 
 
@@ -59,8 +65,18 @@
 // write your code here
 
 
+func takeArray (names:[String]) {
+    for printer2 in names {
+       
+        if printer2 == "Michael" {
+            print("Top of the morning \(printer2)")
+        } else {
+             print("Good Morning \(printer2)")
+        }
+    }
+}
 
-
+takeArray(names: ["Jame","Elina","Michael"])
 
 
 /*: question6
@@ -68,8 +84,21 @@
  */
 // write your code here
 
+func takeInts(numbers:[Int]) -> [Int] {
+    
+    var holder:[Int] = []
+    
+    for looper in numbers {
+        if looper < 50 {
+          holder.append(looper)
+        }
+        
+        
+    }
+    return holder
+}
 
-
+takeInts(numbers: [2,45,56,32])
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
