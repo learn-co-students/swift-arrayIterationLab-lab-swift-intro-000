@@ -14,7 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart into an `Array`. The ingredients are "Chips", "Salsa", "Guacamole", and "Red wine". Name this `Array` variable whatever you like, think of a name which makes sense.
  */
 // write your code here
-
+var ingredients: [String] = ["Chips","Salsa","Guacamole","Red Wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+var list: [Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +36,9 @@
  */
 // write your code here
 
-
+for i in list {
+    print(i)
+}
 
 
 
@@ -47,7 +49,9 @@
  */
 // write your code here
 
-
+for i in ingredients {
+    print(i)
+}
 
 
 
@@ -57,6 +61,17 @@
  ### 5. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
 // write your code here
+
+func greeting(names:[String]) {
+    for i in names{
+        if i == "Michael" {
+            print("Top of the morning Michael!")
+        }
+        else {
+            print("Good morning \(i)")
+        }
+    }
+}
 
 
 
@@ -68,7 +83,15 @@
  */
 // write your code here
 
+var intArray: [Int] = []
 
+func ints (arr: [Int]) {
+    for i in arr {
+        if i < 50 {
+            intArray.append(i)
+        }
+    }
+}
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
