@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var partyFood = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -24,6 +24,8 @@
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code?
  */
 // write your code here
+
+var oneToTen = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +38,9 @@
  */
 // write your code here
 
-
+for num in oneToTen {
+    print(num)
+}
 
 
 
@@ -47,7 +51,9 @@
  */
 // write your code here
 
-
+for item in partyFood {
+    print(item)
+}
 
 
 
@@ -58,7 +64,13 @@
  */
 // write your code here
 
-
+for item in partyFood {
+    print("Good morning \(item)")
+    
+    if item == "Guacamole" {
+        print("Top of the morning \(item)")
+    }
+}
 
 
 
@@ -67,6 +79,15 @@
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
+
+var num3 : [Int] = []
+
+var num2 = 1
+
+while num2 < 100 {
+    num3.append(num2)
+    num2 += 1
+}
 
 
 
