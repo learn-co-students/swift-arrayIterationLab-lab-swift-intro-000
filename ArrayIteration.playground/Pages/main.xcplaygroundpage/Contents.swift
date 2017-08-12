@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var ingredients : Array<String> = [ "Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+var range = 0...10
 
 
 
@@ -36,9 +36,9 @@
  */
 // write your code here
 
-
-
-
+for val in range{
+    print(val)
+}
 
 
 
@@ -48,7 +48,9 @@
 // write your code here
 
 
-
+for ing in ingredients{
+    print(ing)
+}
 
 
 
@@ -57,8 +59,18 @@
  ### 5. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
 // write your code here
+func greet(names:Array<String>){
+    for name in names{
+        if name == "Michael"{
+            print("Top of the morning \(name)!")
 
+        }
+        else{
+            print("Good morning \(name)")
 
+        }
+    }
+}
 
 
 
@@ -69,8 +81,19 @@
 // write your code here
 
 
+func less50(ints:Array<Int>) -> Array<Int>{
+    var res : [Int] = [Int]()
+    for val in ints{
+        if val < 50{
+        res.append(val)
+        }
+    }
+    
+    return res
+}
 
 
+less50(ints:[1,2,51])
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
 
