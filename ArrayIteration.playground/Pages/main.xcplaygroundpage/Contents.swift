@@ -15,6 +15,7 @@
  */
 // write your code here
 
+var Groceries = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -26,6 +27,8 @@
 // write your code here
 
 
+var listOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 
 
 
@@ -36,7 +39,11 @@
  */
 // write your code here
 
-
+for number in listOfNumbers {
+    
+    print(number)
+    
+}
 
 
 
@@ -47,6 +54,11 @@
  */
 // write your code here
 
+for item in Groceries {
+    
+    print (item)
+    
+}
 
 
 
@@ -58,9 +70,20 @@
  */
 // write your code here
 
+func namesArray(Guest: [String]) {
+    
+    for greeting in Guest {
+        if greeting == "Michael" {
+            print ("Top of the Morning", greeting)
+        } else {
+        print ("Good Morning", greeting)
+        }
+    }
+}
 
+let Names : Array = ["Ramesh", "Michael", "Ravi"]
 
-
+namesArray(Guest: Names)
 
 
 /*: question6
@@ -68,7 +91,22 @@
  */
 // write your code here
 
-
+func IntergerArray(Numbers: [Int]) -> [Int] {
+    
+    var result: [Int] = []
+    
+    for number in Numbers {
+        
+        if number <= 50 {
+            
+            result.append(number)
+            
+        }
+        
+    }
+    
+    return result
+}
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
