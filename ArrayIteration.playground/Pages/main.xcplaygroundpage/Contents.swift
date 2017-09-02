@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var ings:[String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-
+var ints:[Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -37,7 +37,9 @@
 // write your code here
 
 
-
+for i in ints {
+    print (i)
+}
 
 
 
@@ -49,7 +51,9 @@
 
 
 
-
+for i in ings {
+    print(i)
+}
 
 
 
@@ -58,17 +62,36 @@
  */
 // write your code here
 
+func nArray(names:[String]){
+    for name in names {
+        if(name == "Michael"){
+            print("Top of the morning Michael!")
+        }else {
+            print ("Good Morning \(name)")
+        }
+    }
+}
 
 
-
-
+var nx:[String] = ["Tim", "Rachel", "Michael"]
+nArray(names: nx)
 
 /*: question6
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
 
+func rInts(ints: [Int])->[Int]{
+    var fInts:[Int] = []
+    for int in ints {
+        if(int < 50){
+            fInts.append(int)
+        }
+    }
+    return fInts
+}
 
+print(rInts(ints:[12,444,32,4]))
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
