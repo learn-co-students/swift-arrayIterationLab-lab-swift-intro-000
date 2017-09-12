@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var myList = ["Chips","Salsa","Guacamole","Red Wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+var numbers = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +36,9 @@
  */
 // write your code here
 
-
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -47,7 +49,9 @@
  */
 // write your code here
 
-
+for items in myList {
+    print(items)
+}
 
 
 
@@ -57,10 +61,21 @@
  ### 5. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
 // write your code here
+var names = ["Othman", "Michael", "Joe","Kadhem","Saddam"]
 
+func greeting(names:[String]){
+    
+    for name in names{
+    print("Good Morning \(name)")
+    
+        if name == "Michael"{
+        print("Top of the morning Michael!")
+            
+    }
+  }
+}
 
-
-
+greeting(names: names)
 
 
 /*: question6
@@ -68,9 +83,19 @@
  */
 // write your code here
 
+func changNums(numbers:[Int])->[Int]{
+    var newArr:[Int]=[]
+    
+    for number in numbers{
+        if (number < 50){
+            newArr.append(number)
+        }
 
-
-
+    }
+    return newArr
+}
+var realNums = [32,39,45,66,89,52,64]
+changNums(numbers: realNums)
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
 
