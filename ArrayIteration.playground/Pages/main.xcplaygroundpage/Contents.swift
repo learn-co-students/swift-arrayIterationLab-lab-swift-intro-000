@@ -75,16 +75,20 @@ greetingMessage(names: names)
 // write your code here
 var rawNumbers:[Int] = [100,150,322,12,34,10,45,69,36,43]
 var newNumbers:[Int] = []
-func takeNumbersLessThanFifty(numberlist:[Int]) {
+func takeNumbersLessThanFifty(numberlist:[Int]) -> [Int] {
+    
+    var results:[Int] = []
+    
     for number in numberlist {
         if number < 50 {
-            newNumbers.append(number)
+            results.append(number)
         }
     }
+     return results
 }
 
 takeNumbersLessThanFifty(numberlist: rawNumbers)
-print(newNumbers)
+
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
 
