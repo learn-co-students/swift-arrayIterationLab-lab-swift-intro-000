@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var ingredientsInCart = ["Chips","Salsa","Guacamole","Red Wine"]
 
 
 
@@ -24,19 +24,14 @@
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code?
  */
 // write your code here
-
-
-
-
-
-
-
+var listToTen = [1,2,3,4,5,6,7,8,9,10]
 /*: question3
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible. (Hint: for-in loop).
  */
 // write your code here
-
-
+for number in listToTen {
+    print(number)
+}
 
 
 
@@ -48,7 +43,9 @@
 // write your code here
 
 
-
+for item in ingredientsInCart {
+    print(item)
+}
 
 
 
@@ -57,19 +54,40 @@
  ### 5. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
 // write your code here
+var names: [String] = ["Tommy","James","Arnold","Michael"]
 
+func greetingMessage(names:[String]) {
+    for name in names {
+        if name == "Michael" {
+            print("Top of the Moring \(name)")
+        } else {
+            print("Good Morning \(name)")
+        }
+    }
+}
 
-
-
+greetingMessage(names: names)
 
 
 /*: question6
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
+var rawNumbers:[Int] = [100,150,322,12,34,10,45,69,36,43]
+var newNumbers:[Int] = []
+func takeNumbersLessThanFifty(numberlist:[Int]) -> [Int] {
+    
+    var results:[Int] = []
+    
+    for number in numberlist {
+        if number < 50 {
+            results.append(number)
+        }
+    }
+     return results
+}
 
-
-
+takeNumbersLessThanFifty(numberlist: rawNumbers)
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
