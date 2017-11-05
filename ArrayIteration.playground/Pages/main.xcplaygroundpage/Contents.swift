@@ -15,9 +15,7 @@
  */
 // write your code here
 
-
-
-
+var ingredients = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 /*: question2
@@ -25,7 +23,7 @@
  */
 // write your code here
 
-
+var list : [Int] = [1,2,4,5,6,7,8,9,10]
 
 
 
@@ -36,8 +34,9 @@
  */
 // write your code here
 
-
-
+for ls in list {
+    print(ls)
+}
 
 
 
@@ -47,7 +46,9 @@
  */
 // write your code here
 
-
+for ing in ingredients {
+    print(ing)
+}
 
 
 
@@ -57,7 +58,15 @@
  ### 5. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
 // write your code here
-
+func iterNames(names:[String]){
+    for name in names {
+        print("Good morning \(name)")
+        
+        if name == "Michael" {
+        print("Top of the morning Michael!")
+        }
+    }
+}
 
 
 
@@ -67,7 +76,16 @@
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
-
+func less50(arr:[Int]) -> [Int] {
+    var res : [Int] = []
+    
+    for ar in arr {
+        if ar < 50 {
+            res.append(ar)
+        }
+    }
+    return res
+}
 
 
 
