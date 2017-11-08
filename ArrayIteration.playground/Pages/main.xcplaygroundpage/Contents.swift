@@ -14,6 +14,11 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart into an `Array`. The ingredients are "Chips", "Salsa", "Guacamole", and "Red wine". Name this `Array` variable whatever you like, think of a name which makes sense.
  */
 // write your code here
+var cartContents : [String] = []
+cartContents.append("Chips")
+cartContents.append("Salsa")
+cartContents.append("Guacamole")
+cartContents.append("Red wine")
 
 
 
@@ -25,9 +30,12 @@
  */
 // write your code here
 
+var tenInts: [Int] = []
 
-
-
+for i : Int in (1...10) {
+    tenInts.append(i)
+}
+print("\(tenInts)")
 
 
 
@@ -36,7 +44,9 @@
  */
 // write your code here
 
-
+for i  in tenInts {
+    print("\(i)")
+}
 
 
 
@@ -46,6 +56,9 @@
  ### 4. Take the list of shopping cart items you created in question 1 and iterate through it printing each item to the console.
  */
 // write your code here
+for item  in cartContents {
+    print("\(item)")
+}
 
 
 
@@ -57,8 +70,18 @@
  ### 5. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
 // write your code here
+func greetings(names: [String]) {
+    for name in names {
+        if name == "Michael" {
+            print("Top of the morning Michael!")
+        } else {
+            print("Good morning \(name)")
+        }
+    }
+}
 
-
+var names = ["John", "Michael", "Elena"]
+greetings(names: names)
 
 
 
@@ -69,6 +92,18 @@
 // write your code here
 
 
+
+func less50 (ints: [Int]) -> [Int] {
+var result: [Int] = []
+    for i in ints {
+        if i < 50 {
+           result.append(i)
+        }
+    }
+    return result
+}
+
+less50(ints: tenInts)
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
