@@ -69,7 +69,17 @@ greetings(names)
 // write your code here
 
 
-
+func 💩(🅱️: [Int])->[Int]{
+    var 👻: [Int] = []
+    for 🅰️ in 🅱️{
+        if(🅰️ < 50){
+            👻.append(🅰️)
+        }
+    }
+    return 👻
+}
+var 😁: [Int] = [100,60,40]
+💩(🅱️: 😁)
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
