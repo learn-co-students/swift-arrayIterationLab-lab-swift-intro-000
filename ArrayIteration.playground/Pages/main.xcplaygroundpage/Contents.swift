@@ -15,9 +15,7 @@
  */
 // write your code here
 
-
-
-
+var ingredients = ["Chips","Salsa","Guacamole","Red wine"]
 
 
 /*: question2
@@ -26,8 +24,7 @@
 // write your code here
 
 
-
-
+var numList = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -37,18 +34,18 @@
 // write your code here
 
 
-
-
-
-
+for num in numList{
+    print("\(num)")
+}
 
 /*: question4
  ### 4. Take the list of shopping cart items you created in question 1 and iterate through it printing each item to the console.
  */
 // write your code here
 
-
-
+for ingredient in ingredients{
+    print("\(ingredient)")
+}
 
 
 
@@ -58,20 +55,44 @@
  */
 // write your code here
 
+var friendsList = ["Cardi","Cameron","Chris","Michael"]
 
+func greetings(names: [String]) {
+    for friend in friendsList {
+        print("Good morning, \(friend)")
+        
+        if friend == "Michael" {
+            print("Top of the morning, Michael!")
+        }
+    }
+}
 
-
-
+greetings(names: friendsList)
 
 /*: question6
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
 
+func numberList(values: [Int]) -> [Int] {
+    var greaterThanFifty: [Int] = []
+    
+    for value: Int in values {
+        if (value < 50) {
+            greaterThanFifty.append(value)
+        }
+    }
+    return greaterThanFifty
+}
+
+var numsList = [1, 2, 50, 51]
+
+print(numberList(values:numsList))
 
 
 
-//: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
+
+
 
 
 
