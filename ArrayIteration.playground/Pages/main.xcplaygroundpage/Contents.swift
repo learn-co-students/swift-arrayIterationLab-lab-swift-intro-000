@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var myArray = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -27,17 +27,19 @@
 
 
 
-
-
-
-
+var num = [1,2,3,4,5,6,7,8,9,10]
 /*: question3
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible. (Hint: for-in loop).
  */
 // write your code here
 
 
+var numArray: [Int] = []
 
+for item in 1...10 {
+    numArray.append(item)
+}
+numArray
 
 
 
@@ -48,7 +50,9 @@
 // write your code here
 
 
-
+for item in myArray {
+    print(item)
+}
 
 
 
@@ -60,7 +64,15 @@
 
 
 
-
+func myFunc(Array: [String]) {
+    for item in Array {
+        if item == "Micheal"{
+            print("Top of the morning \(item)")
+        } else {
+            print("Good morning \(item)")
+        }
+    }
+}
 
 
 /*: question6
@@ -68,11 +80,21 @@
  */
 // write your code here
 
-
+func coolFunc(arrayOfInt: [Int]) -> [Int]{
+    var newArray: [Int] = []
+    for item in arrayOfInt {
+        if item < 50 {
+            newArray.append(item)
+        }
+        
+        
+    }
+    return newArray
+}
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
-
+coolFunc(arrayOfInt: [45,67,21,56,22])
 
 
