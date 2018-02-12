@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var shoppingList = [ "Chips", "Salsa", "Guacamole", "Red wine" ]
 
 
 
@@ -26,8 +26,7 @@
 // write your code here
 
 
-
-
+var numbers: [Int] = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
 
 
@@ -37,7 +36,9 @@
 // write your code here
 
 
-
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -48,7 +49,9 @@
 // write your code here
 
 
-
+for ingredient in shoppingList {
+    print(ingredient)
+}
 
 
 
@@ -58,9 +61,18 @@
  */
 // write your code here
 
+func sayGoodMorning(names: [String]) {
+    for name in names {
+        if(name=="Michael") {
+            print("Top of the morning, \(name)!")
+        }
+        else {
+            print("Good morning, \(name)")
+        }
+    }
+}
 
-
-
+sayGoodMorning(names: [ "Sergey", "Bogdan", "Michael", "Derik" ])
 
 
 /*: question6
@@ -68,8 +80,18 @@
  */
 // write your code here
 
+func above50(numbers: [Int]) -> [Int] {
+    var result: [Int] = []
+    for number in numbers {
+        if (number > 50) {
+            result.append(number)
+        }
+    }
+    
+    return result
+}
 
-
+above50(numbers: [ 4, 59, 69, 4, 54, 2, 75, 43, 12])
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
