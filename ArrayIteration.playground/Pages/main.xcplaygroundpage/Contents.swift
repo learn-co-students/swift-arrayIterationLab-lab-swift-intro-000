@@ -16,7 +16,7 @@
 // write your code here
 
 
-
+var ingredients = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-
+var numbers = [1, 2 ,3 ,4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -37,7 +37,9 @@
 // write your code here
 
 
-
+for num in numbers{
+    print(num)
+}
 
 
 
@@ -47,7 +49,9 @@
  */
 // write your code here
 
-
+for item in ingredients {
+    print(item)
+}
 
 
 
@@ -58,7 +62,16 @@
  */
 // write your code here
 
-
+func greeting (names: [String]) {
+    for name in names{
+        if name == "Michael"{
+             print("Good morning Michael!")
+        
+        } else {
+           print("Good morning \(name)")
+        }
+    }
+}
 
 
 
@@ -68,7 +81,15 @@
  */
 // write your code here
 
-
+func ints (nums: [Int]) -> [Int] {
+    var lessThan50: [Int] = []
+    for num in nums{
+        if num < 50 {
+            lessThan50.append(num)
+        }
+    }
+    return lessThan50
+}
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
