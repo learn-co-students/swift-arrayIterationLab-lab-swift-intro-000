@@ -14,7 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart into an `Array`. The ingredients are "Chips", "Salsa", "Guacamole", and "Red wine". Name this `Array` variable whatever you like, think of a name which makes sense.
  */
 // write your code here
-
+var ingredients = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -24,7 +24,7 @@
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code?
  */
 // write your code here
-
+var list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -35,7 +35,9 @@
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible. (Hint: for-in loop).
  */
 // write your code here
-
+for _ in list {
+    print(list)
+}
 
 
 
@@ -47,7 +49,9 @@
  */
 // write your code here
 
-
+for _ in ingredients {
+    print(ingredients)
+}
 
 
 
@@ -58,8 +62,14 @@
  */
 // write your code here
 
-
-
+var friends = ["Bill", "Michael", "Rob"]
+for greet in friends {
+    print("Good morning \(friends)")
+    if greet == "Michael" {
+        print("Top of the morning \(friends)")
+    }
+    
+}
 
 
 
@@ -68,9 +78,17 @@
  */
 // write your code here
 
-
-
-
+func below50(numbers: [Int]) -> [Int] {
+    var result: [Int] = []
+    for number in numbers {
+        
+    if number < 50 {
+        result.append(number)
+    }
+}
+    return result
+}
+print(below50(numbers: list))
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
 
