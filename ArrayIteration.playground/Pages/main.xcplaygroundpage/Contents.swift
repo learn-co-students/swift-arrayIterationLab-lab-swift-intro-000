@@ -16,6 +16,8 @@
 // write your code here
 
 
+var cartIngredients: [String]
+cartIngredients = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,7 +27,7 @@
  */
 // write your code here
 
-
+let numbers: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -36,7 +38,9 @@
  */
 // write your code here
 
-
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -46,6 +50,10 @@
  ### 4. Take the list of shopping cart items you created in question 1 and iterate through it printing each item to the console.
  */
 // write your code here
+
+for ingredient in cartIngredients {
+    print(ingredient)
+}
 
 
 
@@ -58,7 +66,14 @@
  */
 // write your code here
 
-
+let names: [String] = ["Erin", "Michael", "Ben"]
+for name in names {
+    if name == "Michael" {
+        print("Top of the morning \(name)")
+    } else {
+        print("Good morning \(name)")
+    }
+}
 
 
 
@@ -68,8 +83,16 @@
  */
 // write your code here
 
+let arrayInts1: [Int] = [1, 10, 20, 30, 40, 50, 60, 70, 80]
+var arrayIntsLess50: [Int] = []
 
+for number in arrayInts1 {
+    if number < 50 {
+        arrayIntsLess50.append(number)
+    }
+}
 
+print(arrayIntsLess50)
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
