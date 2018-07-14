@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+let ingredients = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -26,7 +26,7 @@
 // write your code here
 
 
-
+var Num = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -35,8 +35,9 @@
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible. (Hint: for-in loop).
  */
 // write your code here
-
-
+for num in numbers {
+      print(num)
+}
 
 
 
@@ -48,7 +49,9 @@
 // write your code here
 
 
-
+for x in ingredients {
+       print(x)
+    }
 
 
 
@@ -59,7 +62,15 @@
 // write your code here
 
 
+let names = ["Sam", "Jack", "Alex", "Michael", "Dave", "Sean"]
 
+for name in names {
+       if name == "Michael" {
+                print("Top of the morning \(name)")
+    } else {
+            print("Good morning \(name)")
+    }
+}
 
 
 
@@ -68,6 +79,21 @@
  */
 // write your code here
 
+let num = [55, 45, 34, 67, 88, 90]
+
+func over50(list: [Int]) -> [Int]{
+        var over50List: [Int] = []
+    
+        for x in list {
+                if x > 50 {
+                        over50List.append(x)
+                   }
+        }
+     return over50List
+    
+    }
+
+print(over50(list: num))
 
 
 
