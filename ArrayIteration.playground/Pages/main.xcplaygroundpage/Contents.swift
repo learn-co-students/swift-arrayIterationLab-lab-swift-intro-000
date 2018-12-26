@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var partyFood: [String] = ["Chips","Salsa","Guacamole","Red Wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+var numbers:[Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,10 +36,9 @@
  */
 // write your code here
 
-
-
-
-
+for number in numbers {
+    print(number)
+}
 
 
 /*: question4
@@ -48,7 +47,9 @@
 // write your code here
 
 
-
+for items in partyFood {
+    print(items)
+}
 
 
 
@@ -57,19 +58,37 @@
  ### 5. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
 // write your code here
+let nameList = ["x","Michael","y","z"]
 
-
-
-
+func greeting (array:[String]) {
+    for name in array {
+        if name == "Michael" {
+            print("Top of the morning Michael!")
+        } else {
+            print("Good morning \(name) ")
+        }
+    }
+    }
+greeting(array: nameList)
 
 
 /*: question6
  ### 6. Create a function that takes an array of Ints and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
+let randomNumbers = [49,36,88,53,94,23,5,72]
+var smallerThan50: [Int] = []
 
+func lessThan50 (numbers:[Int]) -> [Int] {
+    for numbers in randomNumbers {
+        if numbers < 50 {
+            smallerThan50.append(numbers)
+        }
+    }
+    return smallerThan50
+}
 
-
+lessThan50(numbers: randomNumbers)
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
