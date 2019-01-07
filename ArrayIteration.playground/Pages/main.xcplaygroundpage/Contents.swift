@@ -14,7 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart into an `Array`. The ingredients are "Chips", "Salsa", "Guacamole", and "Red wine". Name this `Array` variable whatever you like, think of a name which makes sense.
  */
 // write your code here
-
+var saturdayNight : [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+var numbers : [Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,6 +36,9 @@
  */
 // write your code here
 
+for x in numbers {
+    print(x)
+}
 
 
 
@@ -46,7 +49,9 @@
  ### 4. Take the list of shopping cart items you created in question 1 and iterate through it printing each item to the console.
  */
 // write your code here
-
+for food in saturdayNight {
+    print(food)
+}
 
 
 
@@ -58,9 +63,22 @@
  */
 // write your code here
 
+func greeting(name: [String])
+{
+    for x in name
+    {
+        if x == "Michael"
+        {
+            print("Top of the morning Michael!");
+        }
+        else
+        {
+             print ("Good morning \(x)");
+        }
+    }
+}
 
-
-
+greeting(name: ["James", "Sally", "Michael"]);
 
 
 /*: question6
@@ -68,9 +86,20 @@
  */
 // write your code here
 
+func integers(a: [Int]) -> [Int]
+{
+    var b : [Int] = []
+    for x in a
+    {
+        if (x<50)
+        {
+            b.append(x)
+        }
+    }
+    return(b)
+}
 
-
-
+integers(a: [1,4,8,60,50,39])
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
 
 
