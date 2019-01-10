@@ -14,7 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart into an `Array`. The ingredients are "Chips", "Salsa", "Guacamole", and "Red wine". Name this `Array` variable whatever you like, think of a name which makes sense.
  */
 // write your code here
-
+var shoppingCart = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+var numbers = [ 1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -36,7 +36,10 @@
  */
 // write your code here
 
-
+for x in numbers
+{
+    print(x)
+}
 
 
 
@@ -47,7 +50,10 @@
  */
 // write your code here
 
-
+for x in shoppingCart
+{
+    print(x)
+}
 
 
 
@@ -58,7 +64,20 @@
  */
 // write your code here
 
-
+func greetPerson (name: [String])
+{
+    for x in name
+    {
+        if x == "Michael"
+        {
+            print("Top of the Morning \(x)")
+        }
+        else
+        {
+            print("Good Morning \(x)")
+        }
+    }
+}
 
 
 
@@ -68,7 +87,20 @@
  */
 // write your code here
 
-
+func intGreaterThan50 (intArray: [Int]) -> [Int]
+{
+    var newArray: [Int] = []
+    
+    for x in intArray
+    {
+        if x < 50
+        {
+            newArray.append(x)
+        }
+    }
+    
+    return newArray
+}
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
